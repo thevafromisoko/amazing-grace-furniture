@@ -1,2 +1,169 @@
-
 /* Inserted from previous full site build CSS response */
+/* style.css for Amazing Grace Furniture */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #1a3c2d;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4f6f52;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #36523c;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/hero-furniture.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 1rem auto 0 auto;
+}
+
+/* Products */
+.featured-products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+/* Services */
+.services ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.services li {
+  margin-bottom: 0.75rem;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-left: 5px solid #4f6f52;
+  padding-left: 1rem;
+  color: #555;
+}
+
+/* Contact */
+.contact {
+  background-color: #4f6f52;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact a.btn {
+  background-color: #fff;
+  color: #4f6f52;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.contact a.btn:hover {
+  background-color: #d9ead3;
+  color: #1a3c2d;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+}
