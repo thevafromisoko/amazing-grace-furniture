@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Amazing Grace Furniture</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -12,7 +15,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
@@ -23,44 +26,54 @@
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="about-story aos-init" data-aos="fade-up">
       <h2>Our Story</h2>
-      <p>Founded in Ozoro, Delta State, Amazing Grace Furniture has grown from a humble workshop to a respected name in handcrafted furniture. Our passion lies in designing custom pieces that reflect both tradition and innovation.</p>
+      <p>From humble beginnings in Ozoro, Delta State, Amazing Grace Furniture was founded with a vision: to craft furniture that blends local heritage with modern style. What started as a family workshop has grown into a full-service design and furniture company known across Delta for quality, honesty, and elegance.</p>
     </section>
 
-    <section class="history">
-      <h3>Where It All Began</h3>
-      <p>Started in a small workshop in Ozoro, our founder believed in the power of locally made, quality furniture. Over the years, we've grown — but our commitment to hand-finished excellence remains.</p>
-    </section>
+    <hr class="section-divider" />
 
-    <section class="values">
-      <h3>Our Core Values</h3>
-      <ul>
-        <li>🛠️ Craftsmanship</li>
-        <li>🤝 Trust</li>
-        <li>🌱 Sustainability</li>
-        <li>🏠 Community</li>
+    <section class="about-values aos-init" data-aos="fade-up">
+      <h2>Our Core Values</h2>
+      <ul class="values-grid">
+        <li><strong>Craftsmanship:</strong> Every piece is built with care, by hand.</li>
+        <li><strong>Community:</strong> We invest in local artisans and materials.</li>
+        <li><strong>Trust:</strong> We deliver what we promise, always.</li>
       </ul>
     </section>
 
-    <section class="team">
-      <h3>Our Team</h3>
-      <p>Meet the artisans and creatives who bring every piece to life — skilled hands, passionate hearts, and a love for great design.</p>
-    </section>
+    <hr class="section-divider" />
 
-    <section class="why-choose-us">
-      <h3>Why Choose Us?</h3>
-      <ul>
-        <li>Locally made with premium materials</li>
-        <li>Custom designs tailored to your taste</li>
-        <li>Reliable delivery and customer support</li>
-        <li>We no dey just build chairs — we dey build comfort wey last.</li>
-      </ul>
+    <section class="team aos-init" data-aos="fade-up">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="team1.jpg" alt="Founder Portrait" />
+          <h3>Grace O. Akpodiete</h3>
+          <p>Founder & Lead Designer</p>
+        </div>
+        <div class="team-card">
+          <img src="team2.jpg" alt="Operations Manager" />
+          <h3>David E. Akpodiete</h3>
+          <p>Operations Manager</p>
+        </div>
+        <div class="team-card">
+          <img src="team3.jpg" alt="Craftsman" />
+          <h3>Samuel U.</h3>
+          <p>Master Craftsman</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Amazing Grace Furniture. All rights reserved.</p>
   </footer>
+
+  <!-- Scroll Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
