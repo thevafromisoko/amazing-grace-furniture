@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | Amazing Grace Furniture</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -17,38 +20,54 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you. Visit our showroom or drop a message!</p>
+    <section class="contact-header aos-init" data-aos="fade-down">
+      <h2>Get in Touch</h2>
+      <p>Reach out to us for inquiries, quotes, or feedback. We’re here to craft something beautiful for you.</p>
+    </section>
 
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label for="name">Full Name:</label><br/>
-      <input type="text" name="name" required /><br/><br/>
-      
-      <label for="email">Email Address:</label><br/>
-      <input type="email" name="email" required /><br/><br/>
-      
-      <label for="message">Your Message:</label><br/>
-      <textarea name="message" rows="6" required></textarea><br/><br/>
-      
-      <button type="submit">Send Message</button>
-    </form>
+    <section class="contact-form-section aos-init" data-aos="fade-up">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required>
 
-    <h3>Visit Us</h3>
-    <p>Showroom: Market Road, Ozoro, Delta State</p>
-    <p>Phone: 0800-123-4567</p>
-    <p>Email: amazinggrace@furniture.ng</p>
+        <label for="email">Your Email *</label>
+        <input type="email" id="email" name="_replyto" required>
 
-    <iframe src="https://www.google.com/maps?q=Ozoro,Delta+State+Nigeria&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <section class="map-section aos-init" data-aos="fade-up">
+      <h3>Visit Us in Ozoro</h3>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3540759281757!2d6.195679215327221!3d5.54559123530292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042081780d5cc01%3A0xf0c0d6a3ff870b9d!2sOzoro%2C%20Delta%20State!5e0!3m2!1sen!2sng!4v1683888335916!5m2!1sen!2sng"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
   </main>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/234XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="whatsapp-icon.png" alt="WhatsApp Icon" />
+  </a>
 
   <footer>
     <p>&copy; 2025 Amazing Grace Furniture. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
