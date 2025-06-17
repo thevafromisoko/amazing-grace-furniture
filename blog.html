@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog | Amazing Grace Furniture</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -16,30 +19,59 @@
         <li><a href="products.html">Products</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <h2>Furniture Insights & Inspiration</h2>
+    <section class="blog-intro aos-init" data-aos="fade-up">
+      <h2>Our Blog</h2>
+      <p>Furniture tips, interior ideas, and inspiration from Ozoro’s favorite craftsmen.</p>
+    </section>
 
-    <article>
-      <h3>Top Interior Trends in Delta State for 2025</h3>
-      <p>Learn how furniture is changing homes and hearts across the Niger Delta. From bold upholstery to royal-style bedframes, this year’s design trends blend culture with modern taste.</p>
-      <a href="#">Read more</a>
-    </article>
+    <section class="blog-grid aos-init" data-aos="fade-up">
+      <!-- Blog Card -->
+      <article class="blog-card">
+        <img src="blog-maintenance.jpg" alt="Maintain Wooden Furniture"/>
+        <div class="blog-content">
+          <h3><a href="#">How to Maintain Wooden Furniture in Nigerian Climate</a></h3>
+          <p>Heat and humidity can stress your wood. Here’s how to preserve the beauty and strength of your furniture in Nigeria.</p>
+          <p class="blog-meta">Category: Educational | Date: May 10, 2025</p>
+        </div>
+      </article>
 
-    <article>
-      <h3>How to Care for Handmade Wood Furniture</h3>
-      <p>Wood furniture needs love too. We share expert tips to help you preserve your beautiful pieces for generations.</p>
-      <a href="#">Read more</a>
-    </article>
+      <article class="blog-card">
+        <img src="blog-style.jpg" alt="Interior Styling Ideas"/>
+        <div class="blog-content">
+          <h3><a href="#">Interior Styling for Small Homes — Big Ideas!</a></h3>
+          <p>Living in a small space doesn’t mean you sacrifice style. These tips will help you transform your home with smart furniture choices.</p>
+          <p class="blog-meta">Category: Styling | Date: April 26, 2025</p>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="blog-custom.jpg" alt="Custom Furniture in Delta State"/>
+        <div class="blog-content">
+          <h3><a href="#">Why Custom Furniture is the Future of Nigerian Homes</a></h3>
+          <p>Mass-produced doesn’t mean it fits your life. Discover why handcrafted pieces matter in modern living.</p>
+          <p class="blog-meta">Category: Branding | Date: April 5, 2025</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="blog-cta aos-init" data-aos="fade-up">
+      <a href="contact.html" class="btn">Want to Feature Your Home? Get in Touch!</a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Amazing Grace Furniture. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
