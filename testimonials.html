@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Testimonials | Amazing Grace Furniture</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -15,7 +18,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="testimonials.html" class="active">Testimonials</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -23,22 +26,49 @@
   </header>
 
   <main class="container">
-    <h2>What Our Clients Say</h2>
-    <blockquote>
-      “Amazing Grace gave my living room a royal upgrade. Great quality!” – Ngozi I., Warri
-    </blockquote>
+    <section class="testimonials-intro aos-init" data-aos="fade-up">
+      <h2>What Our Customers Say</h2>
+      <p>Real voices from real clients. Our furniture is built to impress — and our service backs it up.</p>
+    </section>
 
-    <blockquote>
-      “Beautiful furniture and fast delivery. I recommend them 100%.” – Tunde A., Asaba
-    </blockquote>
+    <section class="testimonial-grid aos-init" data-aos="fade-up">
+      <!-- Testimonial Card -->
+      <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+        <img src="mrs-egonu.jpg" alt="Mrs. Egonu Photo" />
+        <blockquote itemprop="reviewBody">“Their delivery team helped me redesign my sitting room. It felt like I got more than just furniture.”</blockquote>
+        <p><strong itemprop="author">Mrs. Egonu</strong></p>
+        <p><em>Product: Custom Sofa Set</em></p>
+      </div>
 
-    <blockquote>
-      “I ordered a custom dining set — it’s better than I imagined. God bless your hands!” – Mama Rita, Ozoro
-    </blockquote>
+      <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+        <img src="mr-olu.jpg" alt="Mr. Olu Photo" />
+        <blockquote itemprop="reviewBody">“I loved the Isoko Recliner so much, I ordered another for my office!”</blockquote>
+        <p><strong itemprop="author">Mr. Olu</strong></p>
+        <p><em>Product: Isoko Recliner</em></p>
+      </div>
+
+      <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+        <img src="ms-nkechi.jpg" alt="Ms. Nkechi Photo" />
+        <blockquote itemprop="reviewBody">“Strong furniture, fine finishing. It was delivered fast and set up right inside my flat.”</blockquote>
+        <p><strong itemprop="author">Ms. Nkechi</strong></p>
+        <p><em>Product: Niger-Modern Bedframe</em></p>
+      </div>
+    </section>
+
+    <div class="testimonial-cta aos-init" data-aos="fade-up">
+      <a href="contact.html" class="btn">Leave Your Testimonial</a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Amazing Grace Furniture. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Optional: SwiperJS or Carousel Plugin Setup Placeholder -->
+  <!-- <script src="swiper.js"></script> -->
 </body>
 </html>
