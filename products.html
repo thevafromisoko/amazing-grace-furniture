@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Products | Amazing Grace Furniture</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -13,7 +16,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -23,43 +26,75 @@
   </header>
 
   <main class="container">
-    <h2>Our Products</h2>
-    
-    <section class="category">
-      <h3>Living Room</h3>
-      <div class="gallery">
-        <img src="sofa1.jpg" alt="Sofa set with throw pillows" />
-        <img src="center-table.jpg" alt="Polished wooden center table" />
-      </div>
+    <section class="products-intro aos-init" data-aos="fade-up">
+      <h2>Our Furniture Collection</h2>
+      <p>Browse through handcrafted furniture made with passion in Ozoro. Whether for your living room, bedroom, or office — we’ve got timeless pieces built to last.</p>
     </section>
 
-    <section class="category">
-      <h3>Bedroom</h3>
-      <div class="gallery">
-        <img src="bed1.jpg" alt="King-size custom bed" />
-        <img src="wardrobe.jpg" alt="Sliding wardrobe design" />
+    <div class="product-filters aos-init" data-aos="fade-up">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="living">Living Room</button>
+      <button class="filter-btn" data-category="bedroom">Bedroom</button>
+      <button class="filter-btn" data-category="office">Office</button>
+      <button class="filter-btn" data-category="custom">Custom</button>
+    </div>
+
+    <section class="product-grid aos-init" data-aos="fade-up">
+      <!-- Product Card -->
+      <div class="product-card" data-category="living">
+        <img src="sofa.jpg" alt="Elegant Sofa" />
+        <h3>Elegant Sofa</h3>
+        <p>Durable comfort, hand-upholstered with grace.</p>
       </div>
+
+      <div class="product-card" data-category="bedroom">
+        <img src="bedframe.jpg" alt="Royal Delta Bedframe" />
+        <h3>Royal Delta Bedframe</h3>
+        <p>Majestic finish for deep rest. Made from Nigerian mahogany.</p>
+      </div>
+
+      <div class="product-card" data-category="office">
+        <img src="office-desk.jpg" alt="Classic Office Desk" />
+        <h3>Classic Office Desk</h3>
+        <p>Clean lines, ample space. Work in comfort.</p>
+      </div>
+
+      <div class="product-card" data-category="custom">
+        <img src="custom-cabinet.jpg" alt="Custom Cabinetry" />
+        <h3>Custom Cabinetry</h3>
+        <p>Tailored to fit your space and style perfectly.</p>
+      </div>
+
+      <!-- More cards can be added here -->
     </section>
 
-    <section class="category">
-      <h3>Office</h3>
-      <div class="gallery">
-        <img src="desk.jpg" alt="Modern executive desk" />
-        <img src="office-chair.jpg" alt="Custom office chair" />
-      </div>
-    </section>
-
-    <section class="category">
-      <h3>Custom Pieces</h3>
-      <div class="gallery">
-        <img src="isoko-low-bench.jpg" alt="Isoko low bench with carvings" />
-        <img src="bookshelf.jpg" alt="Custom handmade bookshelf" />
-      </div>
-    </section>
+    <div class="products-cta aos-init" data-aos="fade-up">
+      <a href="contact.html" class="btn">Request a Custom Piece</a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Amazing Grace Furniture. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Scroll Animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Optional Filtering Script -->
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        productCards.forEach(card => {
+          const match = category === 'all' || card.dataset.category === category;
+          card.style.display = match ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
