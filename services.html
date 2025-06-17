@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services | Amazing Grace Furniture</title>
+  <title>Our Services | Amazing Grace Furniture</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -14,7 +17,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="products.html">Products</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -23,20 +26,46 @@
   </header>
 
   <main class="container">
-    <h2>Our Services</h2>
+    <section class="services-intro aos-init" data-aos="fade-up">
+      <h2>How We Serve You</h2>
+      <p>We don’t just build furniture — we deliver beauty, comfort, and lasting quality straight to your home or office.</p>
+    </section>
 
-    <h3>Custom Furniture Design</h3>
-    <p>We create furniture tailored to your space, style, and budget. From concept to finish, every detail is yours.</p>
+    <section class="service-grid">
+      <div class="service-card aos-init" data-aos="fade-up">
+        <img src="custom-design.jpg" alt="Custom Furniture Design Icon" />
+        <h3>Custom Furniture Design</h3>
+        <p>Collaborate with our team to bring your vision to life with detailed craftsmanship and high-quality materials.</p>
+        <a href="contact.html" class="btn-small">Request a Design</a>
+      </div>
 
-    <h3>Delivery & Installation</h3>
-    <p>Fast and careful delivery across Delta State and beyond. We also help with proper installation for your comfort.</p>
+      <div class="service-card aos-init" data-aos="fade-up" data-aos-delay="100">
+        <img src="delivery.jpg" alt="Delivery and Installation Icon" />
+        <h3>Delivery & Installation</h3>
+        <p>Get your furniture delivered and installed professionally, anywhere in Delta State and beyond.</p>
+        <a href="contact.html" class="btn-small">Schedule Delivery</a>
+      </div>
 
-    <h3>Interior Consultation</h3>
-    <p>Need help choosing the right piece? Our team offers free interior decor guidance and space optimization tips.</p>
+      <div class="service-card aos-init" data-aos="fade-up" data-aos-delay="200">
+        <img src="consultation.jpg" alt="Interior Consultation Icon" />
+        <h3>Interior Consultations</h3>
+        <p>Need help choosing the right pieces or layout? Our experts offer personalized interior styling tips.</p>
+        <a href="contact.html" class="btn-small">Book a Session</a>
+      </div>
+    </section>
+
+    <section class="services-quote aos-init" data-aos="fade-up">
+      <blockquote>“Their delivery team helped me redesign my sitting room. It felt like I got more than just furniture.”</blockquote>
+      <cite>— Mrs. Egonu, Ozoro</cite>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Amazing Grace Furniture. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
