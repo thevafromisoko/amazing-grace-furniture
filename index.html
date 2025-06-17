@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amazing Grace Furniture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Amazing Grace Furniture</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Amazing Grace Furniture</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="services.html">Services</a></li>
@@ -24,18 +27,18 @@
 
   <section class="hero">
     <div class="hero-overlay">
-      <h1>From Ozoro to Your Home — Furniture with Grace</h1>
-      <p>Crafting Comfort, One Piece at a Time.</p>
+      <h1>From Ozoro to Your Home —<br/> Furniture with Grace</h1>
+      <p>Crafting comfort, one piece at a time.</p>
       <a href="contact.html" class="btn">Get a Quote</a>
     </div>
   </section>
 
-  <section class="intro container">
+  <section class="intro container aos-init" data-aos="fade-up">
     <h2>Welcome to Amazing Grace</h2>
-    <p>Handcrafted furniture built in Ozoro, Delta State with love, skill, and style.</p>
+    <p>Handcrafted furniture made with love, skill, and Delta pride. We blend timeless style with durable craftsmanship for homes that matter.</p>
   </section>
 
-  <section class="featured-products container">
+  <section class="featured-products container aos-init" data-aos="fade-up">
     <h2>Featured Products</h2>
     <div class="product-grid">
       <div class="product-card">
@@ -43,31 +46,56 @@
         <h3>Elegant Sofa</h3>
         <p>Soft, durable, and stylish for any living room.</p>
       </div>
-      <!-- Add more product-card blocks here as needed -->
+      <div class="product-card">
+        <img src="bed.jpg" alt="Modern Bedframe">
+        <h3>Niger-Modern Bedframe</h3>
+        <p>Crafted for beauty and built to last.</p>
+      </div>
+      <div class="product-card">
+        <img src="recliner.jpg" alt="Isoko Recliner">
+        <h3>Isoko Recliner</h3>
+        <p>Comfort that hugs. Local design, global flair.</p>
+      </div>
+      <div class="product-card">
+        <img src="table.jpg" alt="Royal Delta Table">
+        <h3>Royal Delta Table</h3>
+        <p>Perfect for dining or declaration.</p>
+      </div>
     </div>
   </section>
 
-  <section class="services container">
+  <section class="services container aos-init" data-aos="fade-up">
     <h2>Our Services</h2>
     <ul>
       <li>Custom Furniture Design</li>
       <li>Delivery & Installation</li>
       <li>Interior Consultations</li>
     </ul>
+    <a href="services.html" class="btn">Explore Services</a>
   </section>
 
-  <section class="testimonials container">
+  <section class="testimonials container aos-init" data-aos="fade-up">
     <h2>What Our Customers Say</h2>
-    <blockquote>“Best furniture I’ve ever bought – solid, beautiful and affordable!”</blockquote>
+    <blockquote>
+      “Best furniture I’ve ever bought – solid, beautiful and affordable!”
+    </blockquote>
+    <a href="testimonials.html" class="btn">Read More Testimonials</a>
   </section>
 
-  <section class="contact container">
+  <section class="contact container aos-init" data-aos="fade-up">
     <h2>Contact Us Today</h2>
+    <p>Need custom work or bulk orders? Let's talk.</p>
     <a href="contact.html" class="btn">Visit Our Showroom</a>
   </section>
 
   <footer>
     <p>&copy; 2025 Amazing Grace Furniture. All rights reserved.</p>
   </footer>
+
+  <!-- Scroll Animation Library (optional for enhancements) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
