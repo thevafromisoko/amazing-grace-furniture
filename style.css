@@ -1,5 +1,51 @@
 /* style.css for Amazing Grace Furniture */
 
+/* Base Reset and Typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background-color: #003300;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #006400;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+/* Page Headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Responsive Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+
 /* General Reset */
 * {
   margin: 0;
